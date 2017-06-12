@@ -1,0 +1,64 @@
+.App {
+  display: flex;
+  height: 100%; /* 1, 3 */
+  flex-direction: column;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+
+  .App-body {
+    display: flex;
+    flex: 1 0 auto; /* 2 */
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .App-content {
+    margin-top: 5px;
+  }
+
+  .App-nav {
+    order: -1;
+  }
+
+  .App-nav,
+  .App-cart-side {
+    border: thin;
+    padding: 1em;
+    border-radius: 5px;
+    background: #EEEEEE;
+  }
+
+  @media (min-width: 768px) {
+    .App-body {
+      flex-direction: row;
+    }
+    .App-content {
+      flex: 1;
+      padding: 0 10px;
+      margin: 0;
+    }
+    .App-nav, .App-cart-side {
+      flex: 0 0 12em;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .shopping-cart-subtotal {
+    text-align: right;
+  }
+
+  //.form-group-right {
+  //  text-align: right;
+  //  padding-bottom: 10px;
+  //
+  //  .form-label {
+  //    font-weight: 400;
+  //    margin-bottom: 5px;
+  //  }
+  //}
+
+}
