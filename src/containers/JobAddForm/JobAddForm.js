@@ -7,9 +7,6 @@ import Button from '../../components/FormElements/Button/Button';
 const CATEGORIES = require('../../data/categories');
 const PRICING_RULES = require('../../data/priceRules');
 
-
-// const shoppingCartService = null;
-
 class JobAddForm extends Component {
   constructor(props) {
     super(props);

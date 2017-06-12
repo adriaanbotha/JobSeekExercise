@@ -4,7 +4,6 @@ import './Button.css';
 
 const Button = ({ name, label, value, onClick }) => (
   <div className="form-button-primary">
-    {/*<label className="form-label" htmlFor={name}>{label}</label>*/}
       <input
         className={`input-button`}
         type="button"

@@ -8,18 +8,7 @@ class ShoppingCartItem extends Component {
 
     this.state = {
     };
-
-    // this.onChangeUserLogin = this.onChangeUserLogin.bind(this);
   }
-
-  // onChangeUserLogin(user) {
-  //   const userName = user.value;
-  //   const evt = {
-  //     userNameSelected: userName
-  //   }
-  //   this.setState({ userNameSelected: userName || '' });
-  //   this.props.userSelected(evt);
-  // }
 
   render() {
     const FORMAT_AMOUNT = new Intl.NumberFormat('en-US', {

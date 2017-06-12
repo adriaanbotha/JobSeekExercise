@@ -9,7 +9,6 @@ class ShoppingCart extends Component {
     this.state = {
       something : ''
     };
-
   }
 
   render() {

@@ -6,6 +6,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-number-format": "^2.0.0-alpha3",
     "react-select": "^1.0.0-rc.5"
   },
   "devDependencies": {
