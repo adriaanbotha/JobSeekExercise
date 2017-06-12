@@ -39,6 +39,10 @@ class ShoppingCart extends Component {
           <h4>Grand Total</h4>
           <h4>{FORMAT_AMOUNT.format(this.props.total)}</h4>
         </div>
+        <div>
+          <button className="button">Checkout - TBC</button>
+        </div>
+
       </div>
     );
   }

@@ -46,13 +46,19 @@ class JobAddForm extends Component {
     const cartPrice = PRICING_RULES.PRODUCT_PRICE.find((product) => {
       return product.label === this.state.jobProduct
     });
-    const cartItem = Object.assign({},
-      {jobTitle: this.state.jobTitle},
-      {jobDescription: this.state.jobDescription},
-      {jobCategory: this.state.jobCategory},
-      {jobProduct: this.state.jobProduct},
-      {jobPrice: cartPrice.price || 0});
-    this.props.addToCart(cartItem);
+
+    if (this.state.jobTitle.length > 0
+      && this.state.jobDescription.length > 0
+      && this.state.jobCategory.length > 0
+      && this.state.jobProduct) {
+      const cartItem = Object.assign({},
+        {jobTitle: this.state.jobTitle},
+        {jobDescription: this.state.jobDescription},
+        {jobCategory: this.state.jobCategory},
+        {jobProduct: this.state.jobProduct},
+        {jobPrice: cartPrice.price || 0});
+      this.props.addToCart(cartItem);
+    }
   }
 
   handleOnClearCart() {
@@ -106,12 +112,10 @@ class JobAddForm extends Component {
                 onChange={this.handleProductChange}/>
 
         <div className="form-group-right">
-          <Button name="addToCart" label="" type="button" className="" value="Add to Cart"
-                  onClick={this.handleOnAddToCart}/>
+          <button className="form-button-primary" onClick={this.handleOnAddToCart}>Add to Cart</button>
         </div>
         <div className="form-group-right">
-          <Button name="clearCart" label="" type="button" className="form-group-right" value="Clear Cart"
-                  onClick={this.handleOnClearCart}/>
+          <button className="form-button-primary " onClick={this.handleOnClearCart}>Clear Cart</button>
         </div>
       </div>
 

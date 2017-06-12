@@ -11,15 +11,28 @@
     padding-bottom: 40px;
     text-align: center;
   }
+
+  .button, .form-button-primary{
+    background-color: #e60278;
+    border:none;
+    color: white;
+    padding:15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .form-group-right {
+    text-align: right;
+  }
+
 }
 
 .form-group {
   padding-bottom: 15px;
-}
-
-.form-button-primary {
-  text-align: right;
-  color: #e60278;
 }
 
 .form-control {
