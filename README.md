@@ -1,5 +1,9 @@
 ## Welcome to SEEK's Job Add Exercise
 
+
+### `yarn install`<br>
+Without the install this project won;t run.
+
 ### `yarn test`<br>
 
 Select 'a' to run all JEST tests
@@ -15,6 +19,11 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 ## NOTE<br> 
+
+#### Select a User from the login box before proceeding
+The users do have roles selected to them - also mentioned next to their names in the drop down box for *Logged In As*
+
+
 #### Please view Test Scenarios inside ShoppingCartService.test.js<br>
 EXAMPLE SCENARIO Default<br>
 EXAMPLE SCENARIO Unilever<br>

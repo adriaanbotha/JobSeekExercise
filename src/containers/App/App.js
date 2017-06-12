@@ -3,6 +3,7 @@ import './App.css';
 import AppHeader from "../../components/AppHeader/AppHeader";
 import JobAddForm from "../JobAddForm/JobAddForm";
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
+import SideMenu from "../SideMenu/SideMenu";
 import ShoppingCartService from '../../services/ShoppingCart/ShoppingCartService';
 
 const PRICING_RULES = require('../../data/priceRules');
@@ -75,7 +76,9 @@ class App extends Component {
           <div className="App-content">
             <JobAddForm addToCart={this.onAddToCart} clearCart={this.onClearCart}/>
           </div>
-          <div className="App-nav"></div>
+          <div className="App-nav">
+            <SideMenu/>
+          </div>
           <div className="App-cart-side">
             <ShoppingCart cartItems={this.state.cartItems}
                           totalDiscount={this.state.totalDiscount}
