@@ -9,7 +9,7 @@ class AppHeader extends Component {
     super(props);
 
     this.state = {
-      userNameSelected : ''
+      userNameSelected : 'Bloke - Default'
     };
 
     this.onChangeUserLogin = this.onChangeUserLogin.bind(this);

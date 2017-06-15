@@ -32,7 +32,6 @@ class App extends Component {
       return user.userName === newUser.userNameSelected;
     });
     this.setState({ userSelected : userFound });
-    console.log('userFound - ', userFound);
     setTimeout(() => {
       this.shoppingCartService.setUser(this.state.userSelected);
     }, 10);
@@ -53,7 +52,6 @@ class App extends Component {
   processCart() {
     setTimeout(() => {
       this.shoppingCartService.processCart(this.state.cartItems).then(result => {
-        console.log('result received - ', result);
         const discTotal = result.discTotal;
         const total = result.total;
         const cartItems = result.cartItems;

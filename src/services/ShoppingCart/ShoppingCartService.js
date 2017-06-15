@@ -1,13 +1,9 @@
 const PRICE_RULES = require('../../data/priceRules');
 
-// eslint-disable-next-line
-let pricingRules = null;
-let userProfile = null;
-
 export default class ShoppingCartService  {
 
-  constructor (pricingRules) {
-    this.pricingRules = pricingRules;
+  constructor () {
+    const userProfile = null;
   }
 
   setUser(userProfile) {

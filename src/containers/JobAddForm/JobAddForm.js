@@ -3,7 +3,6 @@ import './JobAddForm.css';
 import TextInput from '../../components/FormElements/TextInput/TextInput';
 import TextArea from '../../components/FormElements/TextArea/TextArea';
 import Select from '../../components/FormElements/Select/Select';
-import Button from '../../components/FormElements/Button/Button';
 const CATEGORIES = require('../../data/categories');
 const PRICING_RULES = require('../../data/priceRules');
 
@@ -112,11 +111,11 @@ class JobAddForm extends Component {
                 onChange={this.handleProductChange}/>
 
         <div className="form-group-right">
+          <button className="form-button-secondary" onClick={this.handleOnClearCart}>Clear Cart</button>
           <button className="form-button-primary" onClick={this.handleOnAddToCart}>Add to Cart</button>
         </div>
-        <div className="form-group-right">
-          <button className="form-button-primary " onClick={this.handleOnClearCart}>Clear Cart</button>
-        </div>
+        {/*<div className="form-group-right">*/}
+        {/*</div>*/}
       </div>
 
     );

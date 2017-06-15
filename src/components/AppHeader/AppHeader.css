@@ -1,0 +1,18 @@
+.App-logo {
+  height: 52px;
+  width: 129px; }
+
+.App-header {
+  background-color: #ffffff;
+  height: 81px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .App-header .login-label {
+    padding-right: 10px; }
+
+.Login-header {
+  display: flex;
+  align-items: center; }
+  .Login-header .select-label {
+    width: 200px; }

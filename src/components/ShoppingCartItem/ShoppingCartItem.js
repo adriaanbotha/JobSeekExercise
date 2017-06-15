@@ -24,7 +24,7 @@ class ShoppingCartItem extends Component {
         <p>{this.props.jobCategory}</p>
         <p>{this.props.jobProduct}</p>
         <p>{this.props.jobDescription}</p>
-        <p>{FORMAT_AMOUNT.format(this.props.jobPrice)}</p>
+        <h5>{FORMAT_AMOUNT.format(this.props.jobPrice)}</h5>
         <div className="line"></div>
       </div>
     );

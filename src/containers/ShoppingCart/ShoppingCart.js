@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ShoppingCart.scss';
+import './ShoppingCart.css';
 import ShoppingCartItem from '../../components/ShoppingCartItem/ShoppingCartItem';
 
 class ShoppingCart extends Component {
@@ -40,7 +40,7 @@ class ShoppingCart extends Component {
           <h4>{FORMAT_AMOUNT.format(this.props.total)}</h4>
         </div>
         <div>
-          <button className="button">Checkout - TBC</button>
+          <button className="cart-button">Checkout - TBC</button>
         </div>
 
       </div>
